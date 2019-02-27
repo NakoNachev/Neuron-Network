@@ -1,0 +1,19 @@
+#ifndef NEURON_NET_H
+#define NEURON_NET_H
+
+#include <neuron.h>
+
+
+
+class Neuron_net
+{
+public:
+    Neuron_net();
+    
+private:
+    float target_output;
+    float calculated_output;
+    float margin_of_error = target_output - calculated_output;
+};
+
+#endif // NEURON_NET_H
